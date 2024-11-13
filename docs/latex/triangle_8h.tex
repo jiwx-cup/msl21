@@ -1,0 +1,58 @@
+\section{triangle.h File Reference}
+\label{triangle_8h}\index{triangle.h@{triangle.h}}
+{\tt \#include $<$ctype.h$>$}\par
+{\tt \#include $<$list.h$>$}\par
+{\tt \#include $<$iostream.h$>$}\par
+{\tt \#include \char`\"{}point3d.h\char`\"{}}\par
+{\tt \#include \char`\"{}point.h\char`\"{}}\par
+{\tt \#include \char`\"{}mslio.h\char`\"{}}\par
+{\tt \#include \char`\"{}polygon.h\char`\"{}}\par
+\subsection*{Compounds}
+\begin{CompactItemize}
+\item 
+class {\bf MSLTriangle}
+\begin{CompactList}\small\item\em A 3D triangle, made of 3 3D points.\item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf MSL\_\-TRIANGLE\_\-H}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+istream\& {\bf operator$>$$>$} (istream \&is, {\bf MSLTriangle} \&tr)
+\item 
+ostream\& {\bf operator$<$$<$} (ostream \&os, const {\bf MSLTriangle} \&tr)
+\item 
+{\bf list}$<${\bf MSLTriangle}$>$ {\bf Polygons\-To\-Triangles} (const {\bf list}$<$ {\bf MSLPolygon} $>$ \&pl, double thickness)
+\begin{CompactList}\small\item\em A handy utility for converting 2D geometries into 3D.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{triangle.h@{triangle.h}!MSL_TRIANGLE_H@{MSL\_\-TRIANGLE\_\-H}}
+\index{MSL_TRIANGLE_H@{MSL\_\-TRIANGLE\_\-H}!triangle.h@{triangle.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define MSL\_\-TRIANGLE\_\-H}\label{triangle_8h_a0}
+
+
+{\bf Value:}\footnotesize\begin{verbatim}
+\end{verbatim}\normalsize 
+
+
+\subsection{Function Documentation}
+\index{triangle.h@{triangle.h}!PolygonsToTriangles@{PolygonsToTriangles}}
+\index{PolygonsToTriangles@{PolygonsToTriangles}!triangle.h@{triangle.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf list}$<${\bf MSLTriangle}$>$ Polygons\-To\-Triangles (const {\bf list}$<$ {\bf MSLPolygon} $>$ \& {\em pl}, double {\em thickness})}\label{triangle_8h_a3}
+
+
+A handy utility for converting 2D geometries into 3D.
+
+\index{triangle.h@{triangle.h}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!triangle.h@{triangle.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em os}, const {\bf MSLTriangle} \& {\em tr})}\label{triangle_8h_a2}
+
+
+\index{triangle.h@{triangle.h}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!triangle.h@{triangle.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (istream \& {\em is}, {\bf MSLTriangle} \& {\em tr})}\label{triangle_8h_a1}
+
+

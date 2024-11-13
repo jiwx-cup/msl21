@@ -1,0 +1,141 @@
+.TH "gui.h" 3 "26 Feb 2002" "Motion Strategy Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gui.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <fx.h>\fP
+.br
+\fC#include 'problem.h'\fP
+.br
+\fC#include 'scene.h'\fP
+.br
+\fC#include 'render.h'\fP
+.br
+\fC#include 'util.h'\fP
+.br
+.SS "Compounds"
+
+.in +1c
+.ti -1c
+.RI "class \fBGui\fP"
+.br
+.RI "\fIA generic class for designing graphical user interfaces (GUIs).\fP"
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMSL_GUI_H\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBGID_RENDER_FIRST\fP =  FXMainWindow::ID_LAST, \fBGID_TOGGLE_SHOWPATH\fP, \fBGID_TOGGLE_BOUNDINGBOX\fP, \fBGID_TOGGLE_MULTIPLEVIEWS\fP, \fBGID_TOGGLE_ATTACHEDCAMERA\fP, \fBGID_VCR_STOP\fP, \fBGID_VCR_LAST\fP, \fBGID_VCR_PAUSE\fP, \fBGID_VCR_NEXT\fP, \fBGID_VCR_SLOWER\fP, \fBGID_VCR_PLAY\fP, \fBGID_VCR_FASTER\fP, \fBGID_VCR_RESET\fP, \fBGID_RENDER_LAST\fP, \fBGID_CONSTRUCT\fP, \fBGID_PLAN\fP, \fBGID_CLEAR_GRAPHS\fP, \fBGID_2D_GRAPH\fP, \fBGID_SAVE_GRAPHS\fP, \fBGID_LOAD_GRAPHS\fP, \fBGID_SAVE_FRAMES\fP, \fBGID_LOAD_FRAMES\fP, \fBGID_SAVE_PATH\fP, \fBGID_LOAD_PATH\fP, \fBGID_DONE\fP, \fBGID_RRT\fP, \fBGID_RRTGOALBIAS\fP, \fBGID_RRTCON\fP, \fBGID_RRTDUAL\fP, \fBGID_RRTEXTEXT\fP, \fBGID_RRTEXTCON\fP, \fBGID_RRTCONCON\fP, \fBGID_RCRRT\fP, \fBGID_RCRRTEXTEXT\fP, \fBGID_RRTBIDIRBALANCED\fP, \fBGID_PRM\fP, \fBGID_FDP\fP, \fBGID_FDPSTAR\fP, \fBGID_FDPBESTFIRST\fP, \fBGID_FDPBI\fP, \fBGID_LAST\fP }"
+.br
+.in -1c
+.SH "DEFINE DOCUMENTATION"
+.PP 
+.SS "#define MSL_GUI_H"
+.PP
+\fBValue:\fP
+.PP
+.nf
+
+.fi
+.SH "ENUMERATION TYPE DOCUMENTATION"
+.PP 
+.SS "anonymous enum"
+.PP
+\fBEnumeration values:\fP
+.in +1c
+.TP
+\fB\fIGID_RENDER_FIRST\fP \fP
+.TP
+\fB\fIGID_TOGGLE_SHOWPATH\fP \fP
+.TP
+\fB\fIGID_TOGGLE_BOUNDINGBOX\fP \fP
+.TP
+\fB\fIGID_TOGGLE_MULTIPLEVIEWS\fP \fP
+.TP
+\fB\fIGID_TOGGLE_ATTACHEDCAMERA\fP \fP
+.TP
+\fB\fIGID_VCR_STOP\fP \fP
+.TP
+\fB\fIGID_VCR_LAST\fP \fP
+.TP
+\fB\fIGID_VCR_PAUSE\fP \fP
+.TP
+\fB\fIGID_VCR_NEXT\fP \fP
+.TP
+\fB\fIGID_VCR_SLOWER\fP \fP
+.TP
+\fB\fIGID_VCR_PLAY\fP \fP
+.TP
+\fB\fIGID_VCR_FASTER\fP \fP
+.TP
+\fB\fIGID_VCR_RESET\fP \fP
+.TP
+\fB\fIGID_RENDER_LAST\fP \fP
+.TP
+\fB\fIGID_CONSTRUCT\fP \fP
+.TP
+\fB\fIGID_PLAN\fP \fP
+.TP
+\fB\fIGID_CLEAR_GRAPHS\fP \fP
+.TP
+\fB\fIGID_2D_GRAPH\fP \fP
+.TP
+\fB\fIGID_SAVE_GRAPHS\fP \fP
+.TP
+\fB\fIGID_LOAD_GRAPHS\fP \fP
+.TP
+\fB\fIGID_SAVE_FRAMES\fP \fP
+.TP
+\fB\fIGID_LOAD_FRAMES\fP \fP
+.TP
+\fB\fIGID_SAVE_PATH\fP \fP
+.TP
+\fB\fIGID_LOAD_PATH\fP \fP
+.TP
+\fB\fIGID_DONE\fP \fP
+.TP
+\fB\fIGID_RRT\fP \fP
+.TP
+\fB\fIGID_RRTGOALBIAS\fP \fP
+.TP
+\fB\fIGID_RRTCON\fP \fP
+.TP
+\fB\fIGID_RRTDUAL\fP \fP
+.TP
+\fB\fIGID_RRTEXTEXT\fP \fP
+.TP
+\fB\fIGID_RRTEXTCON\fP \fP
+.TP
+\fB\fIGID_RRTCONCON\fP \fP
+.TP
+\fB\fIGID_RCRRT\fP \fP
+.TP
+\fB\fIGID_RCRRTEXTEXT\fP \fP
+.TP
+\fB\fIGID_RRTBIDIRBALANCED\fP \fP
+.TP
+\fB\fIGID_PRM\fP \fP
+.TP
+\fB\fIGID_FDP\fP \fP
+.TP
+\fB\fIGID_FDPSTAR\fP \fP
+.TP
+\fB\fIGID_FDPBESTFIRST\fP \fP
+.TP
+\fB\fIGID_FDPBI\fP \fP
+.TP
+\fB\fIGID_LAST\fP \fP
+
+.SH "AUTHOR"
+.PP 
+Generated automatically by Doxygen for Motion Strategy Library from the source code.

@@ -1,0 +1,128 @@
+.TH "MSLRandomSource" 3 "26 Feb 2002" "Motion Strategy Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MSLRandomSource \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <random.h>\fP
+.PP
+.SS "Public Methods"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBget_rand31\fP ()"
+.br
+.ti -1c
+.RI "unsigned long \fBget_rand32\fP ()"
+.br
+.ti -1c
+.RI "\fBMSLRandomSource\fP ()"
+.br
+.ti -1c
+.RI "\fBMSLRandomSource\fP (int p)"
+.br
+.ti -1c
+.RI "\fBMSLRandomSource\fP (int low, int high)"
+.br
+.ti -1c
+.RI "unsigned long \fBget\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_seed\fP (int s)"
+.br
+.ti -1c
+.RI "void \fBset_range\fP (int low, int high)"
+.br
+.ti -1c
+.RI "int \fBset_precision\fP (int p)"
+.br
+.ti -1c
+.RI "int \fBget_precision\fP ()"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (unsigned char &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (int &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (long &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (unsigned int &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (unsigned long &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (double &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (float &x)"
+.br
+.ti -1c
+.RI "MSLRandomSource& \fBoperator>>\fP (bool &b)"
+.br
+.ti -1c
+.RI "int \fBoperator()\fP ()"
+.br
+.ti -1c
+.RI "int \fBoperator()\fP (int prec)"
+.br
+.ti -1c
+.RI "int \fBoperator()\fP (int low, int high)"
+.br
+.in -1c
+.SH "CONSTRUCTOR & DESTRUCTOR DOCUMENTATION"
+.PP 
+.SS "MSLRandomSource::MSLRandomSource ()"
+.PP
+.SS "MSLRandomSource::MSLRandomSource (int p)"
+.PP
+.SS "MSLRandomSource::MSLRandomSource (int low, int high)"
+.PP
+.SH "MEMBER FUNCTION DOCUMENTATION"
+.PP 
+.SS "unsigned long MSLRandomSource::get ()\fC [inline]\fP"
+.PP
+.SS "int MSLRandomSource::get_precision ()\fC [inline]\fP"
+.PP
+.SS "unsigned long MSLRandomSource::get_rand31 ()"
+.PP
+.SS "unsigned long MSLRandomSource::get_rand32 ()"
+.PP
+.SS "int MSLRandomSource::operator() (int low, int high)"
+.PP
+.SS "int MSLRandomSource::operator() (int prec)"
+.PP
+.SS "int MSLRandomSource::operator() ()"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (bool & b)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (float & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (double & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (unsigned long & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (unsigned int & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (long & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (int & x)"
+.PP
+.SS "MSLRandomSource & MSLRandomSource::operator>> (unsigned char & x)"
+.PP
+.SS "int MSLRandomSource::set_precision (int p)"
+.PP
+.SS "void MSLRandomSource::set_range (int low, int high)"
+.PP
+.SS "void MSLRandomSource::set_seed (int s)"
+.PP
+
+
+.SH "AUTHOR"
+.PP 
+Generated automatically by Doxygen for Motion Strategy Library from the source code.
